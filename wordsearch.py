@@ -16,6 +16,7 @@ def exist(board, word):
 
         board[r][c] = temp
         return found
+    
 
     for r in range(rows):
         for c in range(cols):
@@ -30,3 +31,4 @@ print(exist([["A","B","C","E"],
              ["A","D","E","E"]], "ABCCED"))
 
 
+print(exist([["A","B","c","E"]], "AbcE")) # output : False
